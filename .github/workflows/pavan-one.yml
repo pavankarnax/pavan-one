@@ -1,0 +1,15 @@
+name: Build
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Run API
+    runs-on: self-hosted
+    steps:
+      - name: Build API
+        run: |
+          echo "Build API"
+          
